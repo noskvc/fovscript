@@ -1,0 +1,9 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/1u9ZiYhu"))()
+local w = library:CreateWindow('FOV Changer')
+local s = w:Slider("FOV", {
+   min = math.floor(30);
+   max = math.floor(240);
+   flag = 'fov'
+}, function(v)
+   workspace.CurrentCamera.FieldOfView = v;
+end)
